@@ -19,16 +19,23 @@ const Home: NextPage = () => {
             <p className={styles.score}>12</p>
           </div>
         </section>
-        <section className={styles.gameContainer}>
-          <button className={styles.gameOption}>
-            <Image src='/images/icon-paper.svg' height={80} width={80} alt='paper-option' />
-          </button>
-          <button className={styles.gameOption}>
-            <Image src='/images/icon-scissors.svg' height={80} width={80} alt='paper-option' />
-          </button>
-          <button className={styles.gameOption}>
-            <Image src='/images/icon-rock.svg' height={80} width={80} alt='paper-option' />
-          </button>
+        <section className={styles.game_container}>
+          <div className={styles.game_option_container}>
+            <button className={styles.game_option}>
+              <Image src='/images/icon-paper.svg' height={80} width={65} alt='paper-option' />
+            </button>
+          </div>
+          <div className={styles.game_option_container}>
+            <button className={styles.game_option}>
+              <Image src='/images/icon-scissors.svg' height={80} width={65} alt='paper-option' />
+            </button>
+          </div>
+
+          <div className={styles.game_option_container}>
+            <button className={styles.game_option}>
+              <Image src='/images/icon-rock.svg' height={67} width={60} alt='paper-option' />
+            </button>
+          </div>
         </section>
         <button className={styles.rules_button}>Rules</button>
       </main>
